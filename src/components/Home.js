@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
     return (
-        <div className="App">
+        <div className="contentWrap">
             <h1>Color App</h1>
         </div>
     );
