@@ -1,18 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Header, Anchor, Box, Button, Menu } from 'grommet'
+
 
 function Nav() {
     return (
-        <nav>
-            <ul className="nav-links">
-                <Link to='/'>
-                    <li>Home</li>
-                </Link>
-                <Link to='/about'>
-                    <li>About</li>
-                </Link>
-            </ul>
-        </nav>
+
+        <Header background="light-4" pad="medium">
+            <Box direction="row" gap="medium">
+                <Anchor label="Home" href="/" />
+                <Anchor label="About" href="/about" />
+            </Box>
+        </Header>
     );
 }
 

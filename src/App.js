@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import axios from "axios";
 import "./styles/App.css";
 import "./styles/Header.css";
@@ -17,7 +17,7 @@ function App() {
         <Switch>
           <Route path={"/"} exact component={Home} />
           <Route path="/about" component={About}  />
-          <Route path={"/:id"} component={ColorInfo} />
+          <Route path={"/:hexcode"} component={ColorInfo} />
         </Switch>
       </div>
     </Router >
