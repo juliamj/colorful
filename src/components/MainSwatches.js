@@ -31,7 +31,7 @@ const MainSwatches = () => {
             <Grid justify="center" columns={size !== 'small' ? 'small' : 'small'} gap="small">
             {colors.map((color, index) => (
               <Anchor href="/color:id"><Box hoverIndicator round="small" elevation="medium" border={{"size": "small"}} background={color} pad="small" key={index} width="xsmall" height="xsmall">
-                {color}
+    
               </Box></Anchor>
             ))}
           </Grid>
