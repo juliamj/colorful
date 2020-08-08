@@ -7,8 +7,29 @@ import {Grommet} from 'grommet'
 const theme = {
   global: {
     font: {
-      family: 'Times New Roman',
+      family: 'Roboto',
       size: '14px'
+    },
+    breakpoints: {
+      xsmall: {
+        value: 375,
+      },
+      small: {
+        value: 568,
+        
+      },
+      medium: {
+        value: 768,
+        
+      },
+      large: {
+        value: 1024,
+        
+      },
+      xlarge: {
+        value: 1366,
+        
+      }
     }
   }
 }

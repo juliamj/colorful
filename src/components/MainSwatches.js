@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import {Box, Heading, Text, Card, Grid, ResponsiveContext} from 'grommet'
+import {Box, Heading, Main, Anchor, Text, Card, Grid, ResponsiveContext} from 'grommet'
 
 const colors = [
     'indigo',
@@ -26,16 +26,16 @@ const listColorsBoxes = colors.map(colorName => (
 const MainSwatches = () => {
       const size = useContext(ResponsiveContext);
     return (
-        <Box>
-        <Box pad="small">
-        <Grid columns={size !== 'small' ? 'small' : 'small'} gap="small">
-          {colors.map((color, index) => (
-            <Box background={color} pad="small" key={index} width="xsmall" height="xsmall">
-              {color}
-            </Box>
-          ))}
-        </Grid>
-      </Box>
+        <Box alignContent="center">
+          <Main justify="center" pad="small">
+            <Grid justify="center" columns={size !== 'small' ? 'small' : 'small'} gap="small">
+            {colors.map((color, index) => (
+              <Anchor href="/color:id"><Box hoverIndicator round="small" elevation="medium" border={{"size": "small"}} background={color} pad="small" key={index} width="xsmall" height="xsmall">
+                {color}
+              </Box></Anchor>
+            ))}
+          </Grid>
+         </Main>
         </Box>
     )
 }
