@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
 import App from './App';
-import {Grommet} from 'grommet'
+import {grommet, Grommet} from 'grommet'
 
 const theme = {
   global: {
@@ -36,7 +35,7 @@ const theme = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Grommet theme={theme}>
+    <Grommet theme={grommet}>
       <App />
     </Grommet>
   </React.StrictMode>,
