@@ -40,8 +40,7 @@ function Media() {
 
 function Footer1() {
     return (
-    <div className="footer">
-        <Footer background="light-4" pad="small" justify="between">
+        <Footer className="footer" background="light-4" pad="medium" justify="between">
             <Box align="center" direction="row" gap="xsmall">
                 <GrommetIcon color="brand" size="medium" />
                 <Text alignSelf="center" color="brand" size="small">
@@ -53,7 +52,6 @@ function Footer1() {
                 ©Copyright
       </Text>
         </Footer>
-    </div>
     );
 }
 

@@ -9,28 +9,28 @@ import  Footer1 from './components/Footer';
 import ColorInfo from "./components/ColorInfo";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import MainSwatches from './components/MainSwatches'
-import FooterNav from './components/FooterNav'
+// import MainSwatches from './components/MainSwatches'
+// import FooterNav from './components/FooterNav'
 
 function App() {
 	return (
 
 		<Box alignContent="center" className="App">
-			<Text >Colors!</Text>
-			<MainSwatches/>
-			<FooterNav/>
+			<Header />
+			
+			{/* <FooterNav/> */}
+			<Footer1/>
 
 		<div className="pageContainer">
-			<Header />
 			<Router>
 				<Switch>
 					<Route path={"/"} exact component={Home} />
 					<Route path="/about" component={About} />
 					<Route path={"/:hexcode"} component={ColorInfo} />
 				</Switch>
-			</Router >
+			</Router>
 	
-			<Footer1 className="footer"/>
+			
 		</div>
 		</Box>
 	);
