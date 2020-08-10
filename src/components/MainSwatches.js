@@ -45,7 +45,7 @@ const MainSwatches = () => {
           {colors.map((color, index) => (
             <Anchor href="/color:id">
               <Box
-                onClick={changeOpacity}
+                // onClick={changeOpacity}
                 hoverIndicator
                 round="small"
                 elevation="medium"
@@ -56,7 +56,7 @@ const MainSwatches = () => {
                 width="xsmall"
                 height="xsmall"
               >
-                {color}
+                {/* {color} */}
               </Box>
             </Anchor>
           ))}

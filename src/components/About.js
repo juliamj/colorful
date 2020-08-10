@@ -1,10 +1,11 @@
 import React from 'react';
+import {Heading, Box} from 'grommet'
 
 function About() {
     return (
-        <div className="contentWrap">
-            <h1>About Page</h1>
-        </div>
+        <Box className="contentWrap">
+            <Heading level="1">About Page</Heading>
+        </Box>
     );
 }
 
