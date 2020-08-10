@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import {BrowserRouter as Router} from 'react-router-dom'
 import {grommet, Grommet} from 'grommet'
 
 const theme = {
@@ -35,8 +36,10 @@ const theme = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Grommet theme={grommet}>
+    <Grommet theme={theme}>
+    <Router>
       <App />
+      </Router>
     </Grommet>
   </React.StrictMode>,
   document.getElementById('root')
