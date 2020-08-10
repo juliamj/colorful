@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import MainSwatches from "./MainSwatches";
+import { Heading, Box } from "grommet";
 
 function Home() {
-    return (
-        <div className="contentWrap">
-            <h1>Color App</h1>
-        </div>
-    );
+  return (
+    <Box className="contentWrap">
+      <Box pad="large" align="center">
+        <Heading level="1">Color App</Heading>
+      </Box>
+      <MainSwatches />
+    </Box>
+  );
 }
 
 export default Home;
