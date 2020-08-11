@@ -6,20 +6,26 @@
 /* .pageContainer {
     position: relative;
     min-height: 100vh;
-  } */
+  } 
 
-  /* .contentWrap {
+  .contentWrap {
     padding-bottom: 2.5rem;    
-  } */
+  }
 
-  /* .footer {
+ .footer {
     position: absolute;
     bottom: 0;
-    width: 100%;            
+    width: 100%;   
+    height: 2.5rem;         
   } */
 
   .header {
     position: absolute;
     bottom: 0;
     width: 100%;            
+  }
+
+
+  .italic {
+    font-style: italic;
   }
