@@ -4,7 +4,7 @@ import { Header, Anchor, Box, Text } from "grommet";
 
 function Nav() {
   return (
-    <Header direction="row" justify="between" background="light-4" pad="medium">
+    <Header className="header" direction="row" justify="between" background="light-4" pad="medium">
       
         <Box alignContent="start" gap="medium" direction="row">
           <Anchor label="Home" href="/" />

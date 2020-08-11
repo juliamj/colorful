@@ -4,7 +4,7 @@ import {Heading, Box, Paragraph, Accordion, AccordionPanel, Anchor, Text, Image}
 
 function About() {
     return (
-        <Box align="center" className="contentWrap">
+        <Box align="center" className="main">
         <Heading level="1">About <GrommetIcon color="brand" size="large" />Colorful</Heading>
 
         <Accordion width="medium">

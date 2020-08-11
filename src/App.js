@@ -16,11 +16,13 @@ function App() {
   return (
     <Box alignContent="center" className="App">
       <Header />
+	  
       <Switch>
         <Route path={"/"} exact component={Home} />
         <Route path="/about" component={About} />
         <Route path={"/:hexcode"} component={ColorInfo} />
       </Switch>
+	  
 
       <Footer1 />
     </Box>

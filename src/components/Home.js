@@ -5,7 +5,7 @@ import {Paint as GrommetIcon} from 'grommet-icons';
 
 function Home() {
   return (
-    <Box className="contentWrap">
+    <Box className="main">
       {/* <Box pad="large" align="center">
         <GrommetIcon color="brand" size="large" />
         <Heading level="1">Colorful</Heading>
