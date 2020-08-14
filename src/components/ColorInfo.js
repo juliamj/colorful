@@ -6,12 +6,19 @@ function ColorInfo({ colors }) {
   let { id } = useParams();
   let colorId = Number(id);
   let color = colors[colorId];
+  // console.log(color.sections.map(c => c.title))
 
   // let colorDeets = colors.filter((colorInd) => {
   //     return colorInd[0] === colorId;
   // }).map((colorInd)=> {
   //     return colorInd;
   // });
+
+  // const bahhh = {color.sections.forEach(function(obj) {
+  //   return obj[0]
+  // })}
+
+  // bahhh
 
   return (
     <Box alignSelf="center" margin="medium" background="orange">
@@ -34,28 +41,34 @@ function ColorInfo({ colors }) {
           ]}
         >
           <Box pad="medium" gridArea="heading" size="large" align="center">
-            <Heading pad="medium">Colorname: {color.colorName}</Heading>
+            <Heading pad="medium">{color.colorName}</Heading>
           </Box>
           
           {/* map sections with title and texts */}
 
-          {/* <Box pad="small" gridArea="description" background="light-5" align="center">
-                        <h2>Description</h2><br></br>{color.description}</Box>
-                    <Box pad="small" gridArea="info" background="light-5" >Info: Hex/RGB{color.hex}{colors.rgb}</Box>
-                    <Box pad="small" gridArea="languages" background="light-5" >
+          {/* //How to map the sections if we want */}
+          {/* {color.sections.map(section => <div>{section.title}</div>)} */}
+          {/* <Box align="center">{color.sections[0].texts}</Box> */}
+          
+          <Box pad="small" gridArea="description" background="light-5" align="center">
+                        <h2>{color.sections[0].title}</h2><br></br>{color.sections[0].texts}</Box>
+                    {/* <Box pad="small" gridArea="info" background="light-5" >Info: Hex/RGB{color.hex}{colors.rgb}</Box> */}
+                    {/* <Box pad="small" gridArea="languages" background="light-5" >
                         <ul>Languages
                             <li>German: {color.languages.german}</li>
                             <li>Spanish: {color.languages.spanish}</li>
-                            </ul></Box>
+                            </ul></Box> */}
+                            
                     <Box pad="small" gridArea="history" background="light-5" >History{color.history}</Box>
+
                     <Box pad="small" gridArea="images" background="light-5" ><Box height="small" width="medium" overflow="hidden">
                         <Carousel fill>
-                            <Image fit="cover" src="//v2.grommet.io/assets/Wilderpeople_Ricky.jpg" />
-                            <Image fit="cover" src="//v2.grommet.io/assets/IMG_4245.jpg"/>
-                            <Image fit="cover" src="//v2.grommet.io/assets/IMG_4210.jpg"/>
+                            <Image fit="cover" src={color.sections[3].picUrls[0]} />
+                            <Image fit="cover" src={color.sections[3].picUrls[1]}/>
+                            <Image fit="cover" src={color.sections[3].picUrls[2]}/>
                         </Carousel>
                     </Box></Box>
-                    <Box pad="small" gridArea="quotes" background="light-2" align="center" ><h2>Quote</h2>"<p className="italic">{color.quote}"</p></Box> */}
+                    <Box pad="small" gridArea="quotes" background="light-2" align="center" ><h2>Quote</h2>"<p className="italic">{color.quotes[0].quotes.map(quote=>quote)}"</p></Box>
         </Grid>
       {/* ))} */}
     </Box>
