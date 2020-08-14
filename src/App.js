@@ -26,20 +26,28 @@ function App() {
 	// 	};
 	// 	fetchColor().then(res => setColor(res));
   // }, []);
+
+
+  Object.entries(colors).map((color, index) => {
+    return color;
+  })
+
   return (
     <Box alignContent="center" className="App">
       <Header />
+	  
       <Switch>
         {/* <Route path={"/"} exact component={Home} /> */}
         <Route exact path={"/"}>
           <Home colors={colors}/>
         </Route>
         <Route path="/about" component={About} />
-        <Route path={"/:cn"}>
-          <ColorInfo colors={colors}/>
+        <Route path={"/:id"}>
+          <ColorInfo colors={colors} />
         </Route>
         {/* <Route path={"/:cn"} component={ColorInfo} /> */}
       </Switch>
+	  
 
       <Footer1 />
     </Box>

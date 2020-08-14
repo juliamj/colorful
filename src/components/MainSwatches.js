@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import {Link} from 'react-router-dom'
 import {
   Box,
   Main,
@@ -27,6 +28,16 @@ import {
 
 // }
 
+// let {cn} = useParams();
+//     cn = colorName.split(' ').join('-')  
+//     cn = cn.split('’').join('-') 
+
+//     let colorDeets = colors.filter((colorInd) => {
+//         return colorInd.colorName === cn;
+//     }).map((colorInd)=> {
+//         return colorInd;
+//     });
+
 const MainSwatches = ({colors}) => {
   const size = useContext(ResponsiveContext);
   return (
@@ -39,8 +50,12 @@ const MainSwatches = ({colors}) => {
 
           border="black"
         >
+        {/* localhost:3000/Tyrian-Purple */}
+    
+
           {Object.entries(colors).map((color, index) => (
-            <Anchor href="/color:cn">
+              
+            <Link to={`/${index}`}> 
               <Box
                 // onClick={changeOpacity}
                 hoverIndicator
@@ -53,10 +68,9 @@ const MainSwatches = ({colors}) => {
                 width="xsmall"
                 height="xsmall"
               >
-                {/* {color} */}
-                {console.log(color)}
+                {/* {console.log(color)} */}
               </Box>
-            </Anchor>
+            </Link>
           ))}
         </Grid>
       </Main>
