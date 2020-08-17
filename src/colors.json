@@ -1,6 +1,7 @@
 [
 	{
 		"colorName": "Tyrian Purple",
+		"hexcode": "#66023C",
 		"sections": [
 			{
 				"title": "Composition and Properties of Tyrian Purple",
@@ -68,6 +69,7 @@
 	},
 	{
 		"colorName": "Phthalocyanine green",
+		"hexcode": "#123524",
 		"sections": [
 			{
 				"title": "Composition and Properties of Phthalocyanine Green",
@@ -140,6 +142,7 @@
 	},
 	{
 		"colorName": "YInMn blue",
+		"hexcode": "#2e5090",
 		"sections": [
 			{
 				"title": "Composition and Properties of YInMn Blue",
@@ -196,6 +199,7 @@
 	},
 	{
 		"colorName": "Pompeiian red",
+		"hexcode": "#a74145",
 		"sections": [
 			{
 				"title": "Composition and Properties of Pompeiian Red",
@@ -243,6 +247,7 @@
 	},
 	{
 		"colorName": "Vantablack",
+		"hexcode": "#020003",
 		"sections": [
 			{
 				"title": "Composition and Properties of Vantablack",
@@ -300,6 +305,7 @@
 	},
 	{
 		"colorName": "Spinel black",
+		"hexcode": "",
 		"sections": [
 			{
 				"title": "Composition and Properties of Spinel Black",
@@ -344,6 +350,7 @@
 	},
 	{
 		"colorName": "Graphite",
+		"hexcode": "#383428",
 		"sections": [
 			{
 				"title": "Composition and Properties of Graphite",
@@ -402,6 +409,7 @@
 	},
 	{
 		"colorName": "Peach-stone black",
+		"hexcode": "",
 		"sections": [
 			{
 				"title": "Composition and Properties of Peachstone Black",
@@ -438,6 +446,7 @@
 	},
 	{
 		"colorName": "Grape seed black",
+		"hexcode": "",
 		"sections": [
 			{
 				"title": "Composition and Properties of Grape Seed Black",
