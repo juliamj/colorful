@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Carousel, Image, Heading, Box, Grid } from "grommet";
+import { Carousel, Image, Heading, Box, Grid, Paragraph} from "grommet";
 
 function ColorInfo({ colors }) {
   let { id } = useParams();
@@ -48,7 +48,7 @@ function ColorInfo({ colors }) {
         <Box
           pad="small"
           gridArea="description"
-          background="light-5"
+          background="light-2"
           align="center"
         >
           <h2>{color.sections[0].title}</h2>
@@ -56,7 +56,7 @@ function ColorInfo({ colors }) {
           <p>{color.sections[0].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="names" background="light-5" align="center">
+        <Box pad="small" gridArea="names" background="light-2" align="center">
           <h2>{color.sections[1].title}</h2>
           <p>{color.sections[1].texts}</p>
           <p>{color.sections[1].links}</p>
@@ -65,7 +65,7 @@ function ColorInfo({ colors }) {
         <Box
           pad="small"
           gridArea="preparation"
-          background="light-5"
+          background="light-2"
           align="center"
         >
           <h2>{color.sections[2].title}</h2>
@@ -73,7 +73,7 @@ function ColorInfo({ colors }) {
           <p>{color.sections[2].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="history" background="light-5" align="center">
+        <Box pad="small" gridArea="history" background="light-2" align="center">
           <h2>{color.sections[3].title}</h2>
           <p>{color.sections[3].texts}</p>
           <p>{color.sections[3].links}</p>
@@ -85,14 +85,13 @@ function ColorInfo({ colors }) {
           <p>Source: {color.quotes[0].source}</p>
         </Box>
 
-        <Box pad="small" gridArea="images" background="light-5">
-          <Box height="small" width="medium" overflow="hidden">
+        <Box pad="small" gridArea="images" background="light-2"  align="center">
+          <Box  height="small" width="medium" overflow="hidden">
             <Carousel fill>
               <Image fit="cover" src={color.sections[2].picUrls[0]} />
               <Image fit="cover" src={color.sections[2].picUrls[1]} />
               <Image fit="cover" src={color.sections[2].picUrls[2]} />
             </Carousel>
-            <Image fit="cover" src={color.sections[1].picUrls[2]} />
           </Box>
         </Box>
       </Grid>
