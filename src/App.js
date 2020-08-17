@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 // import axios from "axios";
-import { Box, Text } from "grommet";
+import { Box } from "grommet";
 import "./styles/App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Footer1 from "./components/Footer";
 import ColorInfo from "./components/ColorInfo";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import axios from 'axios'
+import { BrowserRouter as Switch, Route } from "react-router-dom";
+// import axios from 'axios'
 import colors from './colors.json'
 
 // import MainSwatches from './components/MainSwatches'

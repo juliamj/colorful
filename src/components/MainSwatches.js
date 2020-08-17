@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import {
   Box,
   Main,
-  Anchor,
   Grid,
   ResponsiveContext,
 } from "grommet";

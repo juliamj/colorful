@@ -82,7 +82,7 @@ function ColorInfo({ colors }) {
             <Image fit="cover" src={color.sections[1].picUrls[1]} />
             <Image fit="cover" src={color.sections[1].picUrls[2]} />
           </Carousel>
-        </Box></Box>
+        </Box><Image fit="cover" src={color.sections[1].picUrls[2]} /></Box>
       </Grid >
 
     </Box >
