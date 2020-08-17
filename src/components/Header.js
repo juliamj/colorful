@@ -7,12 +7,12 @@ function Nav() {
     <Header className="header" direction="row" justify="between" background="light-4" pad="medium">
       
         <Box alignContent="start" gap="medium" direction="row">
-          <Anchor label="Home" href="/" />
-          <Anchor label="About" href="/about" />
+          <Anchor label="Home" size="large" color="white" href="/" />
+          <Anchor label="About" size="large" color="white" href="/about" />
         </Box>
         <Box align="center" direction="row" gap="xsmall" >
-        <GrommetIcon color="brand" size="large" />
-            <Text align="center" color="brand" alignSelf="center" weight="bold" size="xxlarge">
+        <GrommetIcon color="orange" size="large" />
+            <Text align="center" color="orange" alignSelf="center" weight="bold" size="xxlarge">
             Colorful
             </Text>
         </Box>
