@@ -8,7 +8,7 @@ import {
     Github,
 } from 'grommet-icons';
 
-import { Anchor, Box, Footer, Main, Text } from 'grommet';
+import { Anchor, Box, Footer, Text } from 'grommet';
 
 function Media() {
     return (

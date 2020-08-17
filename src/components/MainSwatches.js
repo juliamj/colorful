@@ -3,30 +3,10 @@ import {Link} from 'react-router-dom'
 import {
   Box,
   Main,
-  Anchor,
   Grid,
   ResponsiveContext,
 } from "grommet";
 
-// const colors = ["indigo", "yellow", "teal", "chartreuse", "maroon", "coral", "indigo", "yellow", "teal", "chartreuse", "maroon", "coral"];
-
-// const colorObject = {
-//   key: "value",
-// };
-// const listColorsBoxes = colors.map((colorName) => (
-//   <Box
-//     elevation="medium"
-//     key={colorName}
-//     background={colorName}
-//     justify="center"
-//     align="center"
-//   >
-//     <Heading level={2}>{colorName}</Heading>
-//   </Box>
-// ));
-// const changeOpacity = () => {
-
-// }
 
 // let {cn} = useParams();
 //     cn = colorName.split(' ').join('-')  
@@ -49,9 +29,8 @@ const MainSwatches = ({colors}) => {
           rows="small"
 
           border="black"
-        >
-        {/* localhost:3000/Tyrian-Purple */}
-    
+        >    
+        
 
           {Object.entries(colors).map((color, index) => (
               

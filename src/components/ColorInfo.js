@@ -1,17 +1,24 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Carousel, Image, Heading, Box, Grid } from "grommet";
+import { Carousel, Image, Heading, Box, Grid, Paragraph } from "grommet";
 
 function ColorInfo({ colors }) {
   let { id } = useParams();
   let colorId = Number(id);
   let color = colors[colorId];
+  // console.log(color.sections.map(c => c.title))
 
   // let colorDeets = colors.filter((colorInd) => {
   //     return colorInd[0] === colorId;
   // }).map((colorInd)=> {
   //     return colorInd;
   // });
+
+  // const bahhh = {color.sections.forEach(function(obj) {
+  //   return obj[0]
+  // })}
+
+  // bahhh
 
   return (
     <Box alignSelf="center" margin="medium" background="orange">
@@ -33,54 +40,81 @@ function ColorInfo({ colors }) {
           { name: "images", start: [0, 6], end: [0, 6] },
         ]}
       >
-
         {/* map sections with title and texts */}
         <Box pad="small" gridArea="heading" size="large" align="center">
           <Heading pad="medium">{color.colorName}</Heading>
         </Box>
 
-        <Box pad="small" gridArea="description" background="light-5" align="center">
+        <Box
+          pad="small"
+          gridArea="description"
+          background="light-2"
+          align="center"
+        >
           <h2>{color.sections[0].title}</h2>
           <p>{color.sections[0].texts}</p>
           <p>{color.sections[0].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="names" background="light-5" align="center">
+        <Box pad="small" gridArea="names" background="light-2" align="center">
           <h2>{color.sections[1].title}</h2>
           <p>{color.sections[1].texts}</p>
           <p>{color.sections[1].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="preparation" background="light-5" align="center">
+        <Box
+          pad="small"
+          gridArea="preparation"
+          background="light-2"
+          align="center"
+        >
           <h2>{color.sections[2].title}</h2>
           <p>{color.sections[2].texts}</p>
           <p>{color.sections[2].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="history" background="light-5" align="center">
+        <Box pad="small" gridArea="history" background="light-2" align="center">
           <h2>{color.sections[3].title}</h2>
           <p>{color.sections[3].texts}</p>
           <p>{color.sections[3].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="quotes" background="light-2" align="center" >
-          <h2>Quote</h2>
-          <p className="italic">"{color.quotes[0].quotes}"</p>
-          <p >Source: {color.quotes[0].source}</p>
+        {/* // && if this AND this is true */}
+        {!!color.quotes.length && (
+          <Box
+            pad="small"
+            gridArea="quotes"
+            background="light-2"
+            align="center"
+          >
+            <h2>Quote</h2>
+            {color.quotes.map((quote) => {
+              return (
+                <>
+                  <p>{quote.quotes[0]}</p>
+                  <p>Source: {quote.source}</p>
+                </>
+              );
+            })}
+          </Box>
+        )}
+
+        {/* {!!color.sections.filter(section => section.picUrls.length).length &&  */}
+        <Box pad="small" gridArea="images" background="light-2" align="center">
+          <Box height="small" width="medium" overflow="hidden">
+            <Carousel fill>
+              {color.sections.map((section) => {
+                return section.picUrls.map((image) => {
+                  return <Image fit="cover" src={image} />;
+                });
+              })}
+            </Carousel>
+          </Box>
         </Box>
-
-        <Box pad="small" gridArea="images" background="light-5" ><Box height="small" width="medium" overflow="hidden">
-          <Carousel fill>
-            <Image fit="cover" src={color.sections[1].picUrls[0]} />
-            <Image fit="cover" src={color.sections[1].picUrls[1]} />
-            <Image fit="cover" src={color.sections[1].picUrls[2]} />
-          </Carousel>
-        </Box></Box>
-      </Grid >
-
-    </Box >
+        {/* } */}
+      </Grid>
+    </Box>
   );
 }
-
 
 export default ColorInfo;
