@@ -5,9 +5,9 @@
 
 
 ## Technologies/Libraries
-- React[https://reactjs.org/]
-- Puppeteer[https://www.npmjs.com/package/puppeteer]
-- Grommet[https://v2.grommet.io/]
+- [React](https://reactjs.org/)
+- [Puppeteer](https://www.npmjs.com/package/puppeteer)
+- [Grommet](https://v2.grommet.io/)
 
 ## Contributors 
 
