@@ -40,13 +40,17 @@ function ColorInfo({ colors }) {
           { name: "images", start: [0, 6], end: [0, 6] },
         ]}
       >
-
         {/* map sections with title and texts */}
         <Box pad="small" gridArea="heading" size="large" align="center">
           <Heading pad="medium">{color.colorName}</Heading>
         </Box>
 
-        <Box pad="small" gridArea="description" background="light-5" align="center">
+        <Box
+          pad="small"
+          gridArea="description"
+          background="light-5"
+          align="center"
+        >
           <h2>{color.sections[0].title}</h2>
           <p>{color.sections[0].texts}</p>
           <p>{color.sections[0].links}</p>
@@ -58,7 +62,12 @@ function ColorInfo({ colors }) {
           <p>{color.sections[1].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="preparation" background="light-5" align="center">
+        <Box
+          pad="small"
+          gridArea="preparation"
+          background="light-5"
+          align="center"
+        >
           <h2>{color.sections[2].title}</h2>
           <p>{color.sections[2].texts}</p>
           <p>{color.sections[2].links}</p>
@@ -70,24 +79,25 @@ function ColorInfo({ colors }) {
           <p>{color.sections[3].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="quotes" background="light-2" align="center" >
+        <Box pad="small" gridArea="quotes" background="light-2" align="center">
           <h2>Quote</h2>
           <p className="italic">"{color.quotes[0].quotes}"</p>
-          <p >Source: {color.quotes[0].source}</p>
+          <p>Source: {color.quotes[0].source}</p>
         </Box>
 
-        <Box pad="small" gridArea="images" background="light-5" ><Box height="small" width="medium" overflow="hidden">
-          <Carousel fill>
-            <Image fit="cover" src={color.sections[1].picUrls[0]} />
-            <Image fit="cover" src={color.sections[1].picUrls[1]} />
+        <Box pad="small" gridArea="images" background="light-5">
+          <Box height="small" width="medium" overflow="hidden">
+            <Carousel fill>
+              <Image fit="cover" src={color.sections[2].picUrls[0]} />
+              <Image fit="cover" src={color.sections[2].picUrls[1]} />
+              <Image fit="cover" src={color.sections[2].picUrls[2]} />
+            </Carousel>
             <Image fit="cover" src={color.sections[1].picUrls[2]} />
-          </Carousel>
-        </Box><Image fit="cover" src={color.sections[1].picUrls[2]} /></Box>
-      </Grid >
-
-    </Box >
+          </Box>
+        </Box>
+      </Grid>
+    </Box>
   );
 }
-
 
 export default ColorInfo;
