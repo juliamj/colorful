@@ -305,7 +305,7 @@
 	},
 	{
 		"colorName": "Spinel black",
-		"hexcode": "",
+		"hexcode": "#010103",
 		"sections": [
 			{
 				"title": "Composition and Properties of Spinel Black",
@@ -409,7 +409,7 @@
 	},
 	{
 		"colorName": "Peach-stone black",
-		"hexcode": "",
+		"hexcode": "#020204",
 		"sections": [
 			{
 				"title": "Composition and Properties of Peachstone Black",
@@ -446,7 +446,7 @@
 	},
 	{
 		"colorName": "Grape seed black",
-		"hexcode": "",
+		"hexcode": "#010204",
 		"sections": [
 			{
 				"title": "Composition and Properties of Grape Seed Black",
@@ -491,6 +491,7 @@
 	},
 	{
 		"colorName": "Titanium dioxide white",
+		"hexcode": "#FFFFFD",
 		"sections": [
 			{
 				"title": "Composition and Properties of Titanium Dioxide White",
@@ -559,6 +560,7 @@
 	},
 	{
 		"colorName": "Stil de grain",
+		"hexcode": "#FADA5E",
 		"sections": [
 			{
 				"title": "Composition and Properties of Stil de Grain",
@@ -625,6 +627,7 @@
 	},
 	{
 		"colorName": "Chrome red",
+		"hexcode": "#de5246",
 		"sections": [
 			{
 				"title": "Composition and Properties ",
@@ -651,6 +654,7 @@
 	},
 	{
 		"colorName": "Antimony orange",
+		"hexcode": "#B93801",
 		"sections": [
 			{
 				"title": "Composition and Properties of Antimony Orange",
@@ -696,6 +700,7 @@
 	},
 	{
 		"colorName": "Bister",
+		"hexcode": "#3d2b1f",
 		"sections": [
 			{
 				"title": "Composition and Properties of Bister",
@@ -744,6 +749,7 @@
 	},
 	{
 		"colorName": "Phthalocyanine blue",
+		"hexcode": "#000f89",
 		"sections": [
 			{
 				"title": "Composition and Properties of Phthalocyanine Blue",
@@ -815,6 +821,7 @@
 	},
 	{
 		"colorName": "Han blue",
+		"hexcode": "#446ccf",
 		"sections": [
 			{
 				"title": "Composition and Properties of Han Blue",
@@ -866,6 +873,7 @@
 	},
 	{
 		"colorName": "Blue verditer",
+		"hexcode": "#006FBD",
 		"sections": [
 			{
 				"title": "Composition and Properties of Blue Verditer",
@@ -937,6 +945,7 @@
 	},
 	{
 		"colorName": "Manganese blue",
+		"hexcode": "#007DFC",
 		"sections": [
 			{
 				"title": "Composition and Properties of Manganese Blue",
@@ -983,6 +992,7 @@
 	},
 	{
 		"colorName": "Burnt umber",
+		"hexcode": "#8a3324",
 		"sections": [
 			{
 				"title": "Composition and Properties of Burnt Umber",
@@ -1050,6 +1060,7 @@
 	},
 	{
 		"colorName": "Vivianite",
+		"hexcode": "#043B62",
 		"sections": [
 			{
 				"title": "Composition and Properties of Vivianite",
@@ -1117,6 +1128,7 @@
 	},
 	{
 		"colorName": "Manganese brown",
+		"hexcode": "#65371D",
 		"sections": [
 			{
 				"title": "Composition and Properties of Manganese Brown",
@@ -1165,6 +1177,7 @@
 	},
 	{
 		"colorName": "Caput mortuum",
+		"hexcode": "#573939",
 		"sections": [
 			{
 				"title": "Composition and Properties of Caput Mortuum",
@@ -1233,6 +1246,7 @@
 	},
 	{
 		"colorName": "Raw sienna",
+		"hexcode": "#CE6C00",
 		"sections": [
 			{
 				"title": "Composition and Properties of Raw Sienna",
@@ -1307,6 +1321,7 @@
 	},
 	{
 		"colorName": "Lampblack",
+		"hexcode": "#0E1518",
 		"sections": [
 			{
 				"title": "Composition and Properties of Lampblack",
@@ -1372,6 +1387,7 @@
 	},
 	{
 		"colorName": "Manganese black",
+		"hexcode": "#121711",
 		"sections": [
 			{
 				"title": "Composition and Properties of Manganese Black",
@@ -1419,6 +1435,7 @@
 	},
 	{
 		"colorName": "Manganese violet",
+		"hexcode": "#4A238D",
 		"sections": [
 			{
 				"title": "Composition and Properties of Manganese Violet",
@@ -1483,6 +1500,7 @@
 	},
 	{
 		"colorName": "Bismuth vanadate yellow",
+		"hexcode": "#FAF402",
 		"sections": [
 			{
 				"title": "Composition and Properties of Bismuth Vanadate Yellow",
@@ -1532,6 +1550,7 @@
 	},
 	{
 		"colorName": "Asphalt",
+		"hexcode": "#0B0C06",
 		"sections": [
 			{
 				"title": "Composition and Properties of Asphalt",
@@ -1653,6 +1672,7 @@
 	},
 	{
 		"colorName": "Indian yellow",
+		"hexcode": "#FAE500",
 		"sections": [
 			{
 				"title": "Composition and Properties of Indian Yellow",
@@ -1735,6 +1755,7 @@
 	},
 	{
 		"colorName": "Cobalt titanate green",
+		"hexcode": "#05910C",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cobalt Titanate Green",
@@ -1781,6 +1802,7 @@
 	},
 	{
 		"colorName": "Dragon’s blood",
+		"hexcode": "#5E140B",
 		"sections": [
 			{
 				"title": "Composition and Properties of Dragon’s Blood",
@@ -1851,6 +1873,7 @@
 	},
 	{
 		"colorName": "Vine black",
+		"hexcode": "#16231C",
 		"sections": [
 			{
 				"title": "Composition and Properties of Vine Black",
@@ -1918,6 +1941,7 @@
 	},
 	{
 		"colorName": "Egyptian blue",
+		"hexcode": "#0276DE",
 		"sections": [
 			{
 				"title": "Composition and Properties of Egyptian Blue",
@@ -1997,6 +2021,7 @@
 	},
 	{
 		"colorName": "Arylide yellow",
+		"hexcode": "#FCDE1A",
 		"sections": [
 			{
 				"title": "Composition and Properties of Arylide Yellow",
@@ -2045,6 +2070,7 @@
 	},
 	{
 		"colorName": "Zinc yellow",
+		"hexcode": "#FEFE00",
 		"sections": [
 			{
 				"title": "Composition and Properties of Zinc Yellow",
@@ -2119,6 +2145,7 @@
 	},
 	{
 		"colorName": "Lemon yellow",
+		"hexcode": "#FFFF4D",
 		"sections": [
 			{
 				"title": "Composition and Properties of Lemon Yellow",
@@ -2204,6 +2231,7 @@
 	},
 	{
 		"colorName": "Cerulean blue",
+		"hexcode": "#0384AE",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cerulean Blue",
@@ -2302,6 +2330,7 @@
 	},
 	{
 		"colorName": "Carmine",
+		"hexcode": "#C50D0A",
 		"sections": [
 			{
 				"title": "Composition and Properties of Carmine",
@@ -2476,6 +2505,7 @@
 	},
 	{
 		"colorName": "Cobalt yellow",
+		"hexcode": "#FAEA02",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cobalt Yellow",
