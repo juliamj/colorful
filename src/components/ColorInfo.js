@@ -21,7 +21,7 @@ function ColorInfo({ colors }) {
   // bahhh
 
   return (
-    <Box alignSelf="center" margin="medium" background="orange">
+    <Box alignSelf="center" margin="medium" background={color.hexcode}>
       {/* {color.map((colorInd) => ( */}
       <Grid
         margin="medium"

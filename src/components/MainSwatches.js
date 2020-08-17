@@ -41,13 +41,13 @@ const MainSwatches = ({colors}) => {
                 round="small"
                 elevation="medium"
                 border={{ size: "small" }}
-                background={color.colorName}
+                background= {color[1].hexcode}
                 pad="small"
                 key={index}
                 width="xsmall"
                 height="xsmall"
               >
-                {/* {console.log(color)} */}
+                {console.log(color)}
               </Box>
             </Link>
           ))}
