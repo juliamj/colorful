@@ -305,7 +305,7 @@
 	},
 	{
 		"colorName": "Spinel black",
-		"hexcode": "",
+		"hexcode": "#010103",
 		"sections": [
 			{
 				"title": "Composition and Properties of Spinel Black",
@@ -409,7 +409,7 @@
 	},
 	{
 		"colorName": "Peach-stone black",
-		"hexcode": "",
+		"hexcode": "#020204",
 		"sections": [
 			{
 				"title": "Composition and Properties of Peachstone Black",
@@ -446,7 +446,7 @@
 	},
 	{
 		"colorName": "Grape seed black",
-		"hexcode": "",
+		"hexcode": "#010204",
 		"sections": [
 			{
 				"title": "Composition and Properties of Grape Seed Black",
@@ -491,6 +491,7 @@
 	},
 	{
 		"colorName": "Titanium dioxide white",
+		"hexcode": "#FFFFFD",
 		"sections": [
 			{
 				"title": "Composition and Properties of Titanium Dioxide White",
@@ -559,6 +560,7 @@
 	},
 	{
 		"colorName": "Stil de grain",
+		"hexcode": "#FADA5E",
 		"sections": [
 			{
 				"title": "Composition and Properties of Stil de Grain",
@@ -625,6 +627,7 @@
 	},
 	{
 		"colorName": "Chrome red",
+		"hexcode": "#de5246",
 		"sections": [
 			{
 				"title": "Composition and Properties ",
@@ -651,6 +654,7 @@
 	},
 	{
 		"colorName": "Antimony orange",
+		"hexcode": "#B93801",
 		"sections": [
 			{
 				"title": "Composition and Properties of Antimony Orange",
@@ -696,6 +700,7 @@
 	},
 	{
 		"colorName": "Bister",
+		"hexcode": "#3d2b1f",
 		"sections": [
 			{
 				"title": "Composition and Properties of Bister",
