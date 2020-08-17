@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Carousel, Image, Heading, Box, Grid, Paragraph} from "grommet";
+import { Carousel, Image, Heading, Box, Grid, Paragraph } from "grommet";
 
 function ColorInfo({ colors }) {
   let { id } = useParams();
@@ -79,21 +79,39 @@ function ColorInfo({ colors }) {
           <p>{color.sections[3].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="quotes" background="light-2" align="center">
-          <h2>Quote</h2>
-          <p className="italic">"{color.quotes[0].quotes}"</p>
-          <p>Source: {color.quotes[0].source}</p>
-        </Box>
+        {/* // && if this AND this is true */}
+        {!!color.quotes.length && (
+          <Box
+            pad="small"
+            gridArea="quotes"
+            background="light-2"
+            align="center"
+          >
+            <h2>Quote</h2>
+            {color.quotes.map((quote) => {
+              return (
+                <>
+                  <p>{quote.quotes[0]}</p>
+                  <p>Source: {quote.source}</p>
+                </>
+              );
+            })}
+          </Box>
+        )}
 
-        <Box pad="small" gridArea="images" background="light-2"  align="center">
-          <Box  height="small" width="medium" overflow="hidden">
+        {/* {!!color.sections.filter(section => section.picUrls.length).length &&  */}
+        <Box pad="small" gridArea="images" background="light-2" align="center">
+          <Box height="small" width="medium" overflow="hidden">
             <Carousel fill>
-              <Image fit="cover" src={color.sections[2].picUrls[0]} />
-              <Image fit="cover" src={color.sections[2].picUrls[1]} />
-              <Image fit="cover" src={color.sections[2].picUrls[2]} />
+              {color.sections.map((section) => {
+                return section.picUrls.map((image) => {
+                  return <Image fit="cover" src={image} />;
+                });
+              })}
             </Carousel>
           </Box>
         </Box>
+        {/* } */}
       </Grid>
     </Box>
   );
