@@ -23,56 +23,71 @@ function ColorInfo({ colors }) {
   return (
     <Box alignSelf="center" margin="medium" background="orange">
       {/* {color.map((colorInd) => ( */}
-        <Grid
-          margin="medium"
-          alignSelf="center"
-          justifyContent="center"
-          rows={["xsmall", "xsmall", "xsmall", "xsmall", "xsmall"]}
-          columns={["small", "small", "medium"]}
-          gap="small"
-          areas={[
-            { name: "heading", start: [0, 0], end: [2, 0] },
-            { name: "description", start: [0, 1], end: [2, 1] },
-            { name: "info", start: [0, 2], end: [0, 2] },
-            { name: "languages", start: [1, 2], end: [1, 2] },
-            { name: "images", start: [2, 2], end: [2, 3] },
-            { name: "history", start: [0, 3], end: [1, 3] },
-            { name: "quotes", start: [0, 4], end: [2, 4] },
-          ]}
-        >
-          <Box pad="medium" gridArea="heading" size="large" align="center">
-            <Heading pad="medium">{color.colorName}</Heading>
-          </Box>
-          
-          {/* map sections with title and texts */}
+      <Grid
+        margin="medium"
+        alignSelf="center"
+        justifyContent="center"
+        rows={["fill", "fill", "fill", "fill", "fill", "fill", "fill"]}
+        columns={["fill"]}
+        gap="small"
+        areas={[
+          { name: "heading", start: [0, 0], end: [0, 0] },
+          { name: "description", start: [0, 1], end: [0, 1] },
+          { name: "names", start: [0, 2], end: [0, 2] },
+          { name: "preparation", start: [0, 3], end: [0, 3] },
+          { name: "history", start: [0, 4], end: [0, 4] },
+          { name: "quotes", start: [0, 5], end: [0, 5] },
+          { name: "images", start: [0, 6], end: [0, 6] },
+        ]}
+      >
 
-          {/* //How to map the sections if we want */}
-          {/* {color.sections.map(section => <div>{section.title}</div>)} */}
-          {/* <Box align="center">{color.sections[0].texts}</Box> */}
-          
-          <Box pad="small" gridArea="description" background="light-5" align="center">
-                        <h2>{color.sections[0].title}</h2><br></br>{color.sections[0].texts}</Box>
-                    {/* <Box pad="small" gridArea="info" background="light-5" >Info: Hex/RGB{color.hex}{colors.rgb}</Box> */}
-                    {/* <Box pad="small" gridArea="languages" background="light-5" >
-                        <ul>Languages
-                            <li>German: {color.languages.german}</li>
-                            <li>Spanish: {color.languages.spanish}</li>
-                            </ul></Box> */}
-                            
-                    <Box pad="small" gridArea="history" background="light-5" >History{color.history}</Box>
+        {/* map sections with title and texts */}
+        <Box pad="small" gridArea="heading" size="large" align="center">
+          <Heading pad="medium">{color.colorName}</Heading>
+        </Box>
 
-                    <Box pad="small" gridArea="images" background="light-5" ><Box height="small" width="medium" overflow="hidden">
-                        <Carousel fill>
-                            <Image fit="cover" src={color.sections[3].picUrls[0]} />
-                            <Image fit="cover" src={color.sections[3].picUrls[1]}/>
-                            <Image fit="cover" src={color.sections[3].picUrls[2]}/>
-                        </Carousel>
-                    </Box></Box>
-                    <Box pad="small" gridArea="quotes" background="light-2" align="center" ><h2>Quote</h2>"<p className="italic">{color.quotes[0].quotes.map(quote=>quote)}"</p></Box>
-        </Grid>
-      {/* ))} */}
-    </Box>
+        <Box pad="small" gridArea="description" background="light-5" align="center">
+          <h2>{color.sections[0].title}</h2>
+          <p>{color.sections[0].texts}</p>
+          <p>{color.sections[0].links}</p>
+        </Box>
+
+        <Box pad="small" gridArea="names" background="light-5" align="center">
+          <h2>{color.sections[1].title}</h2>
+          <p>{color.sections[1].texts}</p>
+          <p>{color.sections[1].links}</p>
+        </Box>
+
+        <Box pad="small" gridArea="preparation" background="light-5" align="center">
+          <h2>{color.sections[2].title}</h2>
+          <p>{color.sections[2].texts}</p>
+          <p>{color.sections[2].links}</p>
+        </Box>
+
+        <Box pad="small" gridArea="history" background="light-5" align="center">
+          <h2>{color.sections[3].title}</h2>
+          <p>{color.sections[3].texts}</p>
+          <p>{color.sections[3].links}</p>
+        </Box>
+
+        <Box pad="small" gridArea="quotes" background="light-2" align="center" >
+          <h2>Quote</h2>
+          <p className="italic">"{color.quotes[0].quotes}"</p>
+          <p >Source: {color.quotes[0].source}</p>
+        </Box>
+
+        <Box pad="small" gridArea="images" background="light-5" ><Box height="small" width="medium" overflow="hidden">
+          <Carousel fill>
+            <Image fit="cover" src={color.sections[1].picUrls[0]} />
+            <Image fit="cover" src={color.sections[1].picUrls[1]} />
+            <Image fit="cover" src={color.sections[1].picUrls[2]} />
+          </Carousel>
+        </Box></Box>
+      </Grid >
+
+    </Box >
   );
 }
+
 
 export default ColorInfo;
