@@ -36,7 +36,6 @@ function App() {
       <Header />
 
       <Switch>
-        {/* <Route path={"/"} exact component={Home} /> */}
         <Route exact path={"/"}>
           <Home colors={colors} />
         </Route>
@@ -46,7 +45,6 @@ function App() {
         <Route exact path={"/color-:id"}>
           <ColorInfo colors={colors} />
         </Route>
-        {/* <Route path={"/:cn"} component={ColorInfo} /> */}
       </Switch>
 
       <Footer1 />
@@ -55,21 +53,3 @@ function App() {
 }
 
 export default App;
-
-// const renderColors = data => {
-// 	const colors = data.results;
-//   console.debug({ colors });
-//   return colors.map(color => {
-// 		return (ul.innerHTML += `
-//     <li>
-//       <img src="${color.picture.medium}" />
-//       <p>${color.name.first} ${user.name.last}</p>
-//       <div>${color.email}</div>
-//     </li>`);
-// 	});
-// };
-
-// const url = "https://randomuser.me/api/?results=10";
-// fetch(url)
-// 	.then(response => response.json())
-// 	.then(renderColors);

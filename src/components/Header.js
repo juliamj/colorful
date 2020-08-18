@@ -25,7 +25,7 @@ function Nav() {
         align="center"
         direction="row"
         gap="xsmall"
-        margin={{ right: "xlarge" }}
+        margin={{ right: "large" }}
       >
         <GrommetIcon color="light-1" size="large" />
         <Text
