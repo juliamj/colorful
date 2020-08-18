@@ -4,10 +4,7 @@ import {
   Heading,
   Box,
   Paragraph,
-  Accordion,
-  AccordionPanel,
   Anchor,
-  Text,
   Image,
 } from "grommet";
 

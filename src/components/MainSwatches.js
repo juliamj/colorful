@@ -4,19 +4,9 @@ import {
   Box,
   Main,
   Grid,
+  Anchor,
   ResponsiveContext,
 } from "grommet";
-
-
-// let {cn} = useParams();
-//     cn = colorName.split(' ').join('-')  
-//     cn = cn.split('’').join('-') 
-
-//     let colorDeets = colors.filter((colorInd) => {
-//         return colorInd.colorName === cn;
-//     }).map((colorInd)=> {
-//         return colorInd;
-//     });
 
 const MainSwatches = ({colors}) => {
   const size = useContext(ResponsiveContext);
@@ -33,9 +23,8 @@ const MainSwatches = ({colors}) => {
 
           {Object.entries(colors).map((color, index) => (
               
-            <Link to={`/color-${index}`}> 
+            <Anchor href={`/color-${index}`} a11yTitle={color[1].colorName}> 
               <Box
-                // onClick={changeOpacity}
                 hoverIndicator
                 round="small"
                 elevation="medium"
@@ -45,10 +34,10 @@ const MainSwatches = ({colors}) => {
                 key={index}
                 width="xsmall"
                 height="xsmall"
-              >
-                {console.log(color)}
-              </Box>
-            </Link>
+                a11yTitle={color[1].colorName}
+              />
+      
+            </Anchor>
           ))}
         </Grid>
       </Main>
