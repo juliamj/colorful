@@ -14,7 +14,7 @@ function Media() {
     return (
     <div>
         <Box direction="row" gap="xxsmall" justify="center">
-            <Anchor
+            {/* <Anchor
                 a11yTitle="Share feedback on Github"
                 href="https://www.instagram.com/"
                 icon={<Instagram color="orange" />}
@@ -25,11 +25,11 @@ function Media() {
                 href="https://www.facebook.com/"
                 icon={<FacebookOption color="blue" />}
                 target="_blank"
-            />
+            /> */}
             <Anchor
                 a11yTitle="Check out our Respository on Github"
                 href="https://github.com/holdenmad/colors"
-                icon={<Github color="green" />}
+                icon={<Github color="white" />}
                 target="_blank"
             />
         </Box>
@@ -40,15 +40,15 @@ function Media() {
 
 function Footer1() {
     return (
-        <Footer flex className="footer" background="light-4" pad="medium" justify="between">
+        <Footer elevation="medium" flex className="footer" background="light-4" pad="medium" justify="between">
             <Box align="center" direction="row" gap="xsmall">
-                <GrommetIcon color="brand" size="medium" />
-                <Text alignSelf="center" color="brand" size="small">
+                <GrommetIcon color="white" size="medium" />
+                <Text alignSelf="center" color="white" size="small">
                     Colorful
                 </Text>
             </Box>
             <Media />
-            <Text textAlign="center" size="xsmall">
+            <Text textAlign="center" size="xsmall" color="white">
                 ©Copyright
             </Text>
         </Footer>
