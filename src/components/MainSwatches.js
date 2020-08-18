@@ -21,7 +21,7 @@ import {
 const MainSwatches = ({colors}) => {
   const size = useContext(ResponsiveContext);
   return (
-    <Box className="mainSwatches">
+    <Box>
       <Main justify="center" pad="xlarge">
         <Grid
           justify="center"

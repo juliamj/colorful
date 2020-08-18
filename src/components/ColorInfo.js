@@ -101,8 +101,8 @@ function ColorInfo({ colors }) {
 
         {/* {!!color.sections.filter(section => section.picUrls.length).length &&  */}
         <Box pad="small" gridArea="images" background="light-2" align="center">
-          <Box height="small" width="medium" overflow="hidden">
-            <Carousel fill>
+          <Box height="fit" width="fit" overflow="hidden">
+            <Carousel fill play="3000">
               {color.sections.map((section) => {
                 return section.picUrls.map((image) => {
                   return <Image fit="cover" src={image} />;
