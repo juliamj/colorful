@@ -4,18 +4,40 @@ import { Header, Anchor, Box, Text } from "grommet";
 
 function Nav() {
   return (
-    <Header className="header" direction="row" justify="between" background="light-4" pad="medium">
-      
-        <Box alignContent="start" gap="medium" direction="row">
-          <Anchor label="Home" size="large" color="white" href="/" />
-          <Anchor label="About" size="large" color="white" href="/about" />
-        </Box>
-        <Box align="center" direction="row" gap="xsmall" >
-        <GrommetIcon color="orange" size="large" />
-            <Text align="center" color="orange" alignSelf="center" weight="bold" size="xxlarge">
-            Colorful
-            </Text>
-        </Box>
+    <Header
+      elevation="medium"
+      className="header"
+      direction="row"
+      justify="between"
+      background="light-4"
+      pad="medium"
+    >
+      <Box alignContent="start" gap="medium" direction="row">
+        <Anchor
+          label="Home"
+          size="large"
+          color="light-2"
+          href="/"
+        />
+        <Anchor label="About" size="large" color="light-1" href="/about" />
+      </Box>
+      <Box
+        align="center"
+        direction="row"
+        gap="xsmall"
+        margin={{ right: "xlarge" }}
+      >
+        <GrommetIcon color="light-1" size="large" />
+        <Text
+          align="center"
+          color="light-1"
+          alignSelf="center"
+          weight="bold"
+          size="xxlarge"
+        >
+          Colorful
+        </Text>
+      </Box>
     </Header>
   );
 }

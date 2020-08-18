@@ -27,14 +27,13 @@ const MainSwatches = ({colors}) => {
           justify="center"
           columns={size !== "small" ? "small" : "small"}
           rows="small"
-
           border="black"
         >    
         
 
           {Object.entries(colors).map((color, index) => (
               
-            <Link to={`/${index}`}> 
+            <Link to={`/color-${index}`}> 
               <Box
                 // onClick={changeOpacity}
                 hoverIndicator

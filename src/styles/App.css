@@ -23,21 +23,20 @@
 
  .header {
    /* background-image: url("https://cdn.pixabay.com/photo/2017/01/08/19/10/wood-1963700_960_720.jpg"); */
-   /* background-image: url("https://cdn.pixabay.com/photo/2017/08/09/04/53/texture-2613518_960_720.jpg"); */
    background-image: url("https://cdn.pixabay.com/photo/2011/06/29/15/27/wood-8196_960_720.jpg");
-   /* background-image: url("https://cdn.pixabay.com/photo/2015/12/26/08/35/texture-1108420_960_720.jpg"); */
    /* background-image: url("https://cdn.pixabay.com/photo/2016/07/09/23/29/background-1507046_960_720.jpg"); */
-   /* background-image: url("https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_960_720.jpg"); */
-   /* background-image: url("https://cdn.pixabay.com/photo/2014/12/17/21/29/school-571938_960_720.jpg"); */
-   /* background-image: url("https://cdn.pixabay.com/photo/2013/03/23/23/10/brush-96240_960_720.jpg"); */
-   /* background-image: url("https://cdn.pixabay.com/photo/2016/03/09/15/22/painter-1246619_960_720.jpg"); */
-
+  
    height: 10rem;
    background-size: cover;
 
     /* position: fixed;
     top: 0;
     width: 100%;             */
+  }
+
+  .footer {
+    background-image: url("https://cdn.pixabay.com/photo/2011/06/29/15/27/wood-8196_960_720.jpg");
+    background-size: cover;
   }
 
   .mainSwatches {
@@ -48,7 +47,7 @@
    /* background-image: url("https://cdn.pixabay.com/photo/2016/07/09/23/29/background-1507046_960_720.jpg"); */
    /* background-image: url("https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_960_720.jpg"); */
    /* background-image: url("https://cdn.pixabay.com/photo/2014/12/17/21/29/school-571938_960_720.jpg"); */
-   background-image: url("https://cdn.pixabay.com/photo/2013/03/23/23/10/brush-96240_960_720.jpg");
+   /* background-image: url("https://cdn.pixabay.com/photo/2013/03/23/23/10/brush-96240_960_720.jpg"); */
    /* background-image: url("https://cdn.pixabay.com/photo/2016/03/09/15/22/painter-1246619_960_720.jpg"); */
 
    background-size: cover;

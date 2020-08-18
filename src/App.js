@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 // import axios from "axios";
 import { Box } from "grommet";
 import "./styles/App.css";
@@ -9,7 +9,7 @@ import Footer1 from "./components/Footer";
 import ColorInfo from "./components/ColorInfo";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 // import axios from 'axios'
-import colors from './colors.json'
+import colors from "./colors.json";
 
 // import MainSwatches from './components/MainSwatches'
 // import FooterNav from './components/FooterNav'
@@ -17,37 +17,37 @@ import colors from './colors.json'
 function App() {
   const [color, setColor] = useState([]);
   // useEffect(() => {
-	// 	const fetchColor = async () => {
-	// 		const color = await axios
+  // 	const fetchColor = async () => {
+  // 		const color = await axios
   //       .get('https://colors.herokuapp.com/colors')
   //       .then(result => result.data)
   //     return color;
-      
-	// 	};
-	// 	fetchColor().then(res => setColor(res));
-  // }, []);
 
+  // 	};
+  // 	fetchColor().then(res => setColor(res));
+  // }, []);
 
   Object.entries(colors).map((color, index) => {
     return color;
-  })
+  });
 
   return (
     <Box alignContent="center" className="App">
       <Header />
-	  
+
       <Switch>
         {/* <Route path={"/"} exact component={Home} /> */}
         <Route exact path={"/"}>
-          <Home colors={colors}/>
+          <Home colors={colors} />
         </Route>
-        <Route path="/about" component={About} />
-        <Route path={"/:id"}>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path={"/color-:id"}>
           <ColorInfo colors={colors} />
         </Route>
         {/* <Route path={"/:cn"} component={ColorInfo} /> */}
       </Switch>
-	  
 
       <Footer1 />
     </Box>
