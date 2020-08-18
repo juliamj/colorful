@@ -1,4 +1,4 @@
-# Color App
+# Colorful App
 
 ## About
 
