@@ -42,7 +42,7 @@ function ColorInfo({ colors }) {
       >
         {/* map sections with title and texts */}
         <Box pad="small" gridArea="heading" size="large" align="center">
-          <Heading pad="medium">{color.colorName}</Heading>
+          <Heading className="heading" pad="medium">{color.colorName}</Heading>
         </Box>
 
         <Box
