@@ -1,5 +1,7 @@
 # Colorful App
 
+![Screenshot of Colorful App](/images/colorfulscreenshot.png)
+
 ## About
 
 A simple app to learn more about different colors! Click on any color on the front page to read about the history, see pictures, and read quotes with the color. 
