@@ -1,24 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Carousel, Image, Heading, Box, Grid, Paragraph } from "grommet";
+import { Carousel, Image, Heading, Box, Grid } from "grommet";
 
 function ColorInfo({ colors }) {
   let { id } = useParams();
   let colorId = Number(id);
   let color = colors[colorId];
   // console.log(color.sections.map(c => c.title))
-
-  // let colorDeets = colors.filter((colorInd) => {
-  //     return colorInd[0] === colorId;
-  // }).map((colorInd)=> {
-  //     return colorInd;
-  // });
-
-  // const bahhh = {color.sections.forEach(function(obj) {
-  //   return obj[0]
-  // })}
-
-  // bahhh
 
   return (
     <Box alignSelf="center" margin="medium" background={color.hexcode}>

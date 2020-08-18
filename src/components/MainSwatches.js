@@ -7,17 +7,6 @@ import {
   ResponsiveContext,
 } from "grommet";
 
-
-// let {cn} = useParams();
-//     cn = colorName.split(' ').join('-')  
-//     cn = cn.split('’').join('-') 
-
-//     let colorDeets = colors.filter((colorInd) => {
-//         return colorInd.colorName === cn;
-//     }).map((colorInd)=> {
-//         return colorInd;
-//     });
-
 const MainSwatches = ({colors}) => {
   const size = useContext(ResponsiveContext);
   return (
@@ -35,7 +24,6 @@ const MainSwatches = ({colors}) => {
               
             <Link to={`/color-${index}`}> 
               <Box
-                // onClick={changeOpacity}
                 hoverIndicator
                 round="small"
                 elevation="medium"

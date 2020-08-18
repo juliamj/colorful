@@ -1,10 +1,7 @@
 import React from 'react';
-// import { storiesOf } from '@storybook/react';
 
 import {
     Paint as GrommetIcon,
-    FacebookOption,
-    Instagram,
     Github,
 } from 'grommet-icons';
 
@@ -14,18 +11,7 @@ function Media() {
     return (
     <div>
         <Box direction="row" gap="xxsmall" justify="center">
-            {/* <Anchor
-                a11yTitle="Share feedback on Github"
-                href="https://www.instagram.com/"
-                icon={<Instagram color="orange" />}
-                target="_blank"
-            />
-            <Anchor
-                a11yTitle="Chat with us on Slack"
-                href="https://www.facebook.com/"
-                icon={<FacebookOption color="blue" />}
-                target="_blank"
-            /> */}
+           
             <Anchor
                 a11yTitle="Check out our Respository on Github"
                 href="https://github.com/holdenmad/colors"
