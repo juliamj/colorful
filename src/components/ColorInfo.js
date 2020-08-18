@@ -41,6 +41,8 @@ function ColorInfo({ colors }) {
 
         <Box
           pad="small"
+          margin="small"
+          elevation="small"
           gridArea="description"
           background="light-2"
           align="center"
@@ -53,6 +55,8 @@ function ColorInfo({ colors }) {
 
         <Box
           pad="small"
+          margin="small"
+          elevation="small"
           gridArea="names"
           background="light-2"
           align="center"
@@ -65,6 +69,8 @@ function ColorInfo({ colors }) {
 
         <Box
           pad="small"
+          margin="small"
+          elevation="small"
           gridArea="preparation"
           background="light-2"
           align="center"
@@ -75,7 +81,13 @@ function ColorInfo({ colors }) {
           <p>{color.sections[2].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="history" background="light-2" align="center">
+        <Box
+          pad="small"
+          margin="small"
+          elevation="small"
+          gridArea="history" 
+          background="light-2" 
+          align="center">
           <h2>{color.sections[3].title}</h2>
           <p>{color.sections[3].texts}</p>
           <p>{color.sections[3].links}</p>
@@ -86,6 +98,8 @@ function ColorInfo({ colors }) {
         {!!color.quotes.length && (
           <Box
             pad="small"
+            margin="small"
+            elevation="small"
             gridArea="quotes"
             background="light-2"
             align="center"
@@ -108,8 +122,8 @@ function ColorInfo({ colors }) {
         <Box
           a11yTitle="Pictures of Color"
           pad="small"
+          margin="small"
           gridArea="images"
-          background="light-2"
           align="center"
         >
           <Box
