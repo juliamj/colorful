@@ -25,3 +25,14 @@
 .heading {
   text-transform: capitalize;
 }
+
+h2 {
+  margin-top: 10px;;
+  margin-bottom: 10px;;
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;;
+}
