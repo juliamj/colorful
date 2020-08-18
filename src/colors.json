@@ -2562,6 +2562,7 @@
 	},
 	{
 		"colorName": "Cadmium red",
+		"hexcode": "#e30022",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cadmium Red",
@@ -2634,6 +2635,7 @@
 	},
 	{
 		"colorName": "Cadmium orange",
+		"hexcode": "#ed872d",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cadmium Orange",
@@ -2704,6 +2706,7 @@
 	},
 	{
 		"colorName": "Calcite",
+		"hexcode": "#EDE8D5",
 		"sections": [
 			{
 				"title": "Composition and Properties of Calcite",
@@ -2803,6 +2806,7 @@
 	},
 	{
 		"colorName": "Chrome orange",
+		"hexcode": "#FF3C06",
 		"sections": [
 			{
 				"title": "Composition and Properties of Chrome Orange",
@@ -2879,6 +2883,7 @@
 	},
 	{
 		"colorName": "Zinc white",
+		"hexcode": "#FFFFFF",
 		"sections": [
 			{
 				"title": "Composition and Properties of Zinc White",
@@ -2988,6 +2993,7 @@
 	},
 	{
 		"colorName": "Burnt Sienna",
+		"hexcode": "#e97451",
 		"sections": [
 			{
 				"title": "Composition and Properties of Burnt Sienna",
@@ -3078,6 +3084,7 @@
 	},
 	{
 		"colorName": "Vandyke brown",
+		"hexcode": "#121615",
 		"sections": [
 			{
 				"title": "Composition and Properties of Vandyke Brown",
@@ -3161,6 +3168,7 @@
 	},
 	{
 		"colorName": "Umber",
+		"hexcode": "#635147",
 		"sections": [
 			{
 				"title": "Composition and Properties of Umber",
@@ -3333,6 +3341,7 @@
 	},
 	{
 		"colorName": "Orange ochre",
+		"hexcode": "#FF8E04",
 		"sections": [
 			{
 				"title": "Composition and Properties of Orange Ochre",
@@ -3432,6 +3441,7 @@
 	},
 	{
 		"colorName": "Brown ochre",
+		"hexcode": "#562E04",
 		"sections": [
 			{
 				"title": "Composition and Properties of Brown Ochre",
@@ -3570,6 +3580,7 @@
 	},
 	{
 		"colorName": "Realgar",
+		"hexcode": "#FA7403",
 		"sections": [
 			{
 				"title": "Composition and Properties of Realgar",
@@ -3664,6 +3675,7 @@
 	},
 	{
 		"colorName": "Gamboge",
+		"hexcode": "#e49b0f",
 		"sections": [
 			{
 				"title": "Composition and Properties of Gamboge",
@@ -3735,6 +3747,7 @@
 	},
 	{
 		"colorName": "Charcoal black",
+		"hexcode": "#36454f",
 		"sections": [
 			{
 				"title": "Composition and Properties of Charcoal Black",
@@ -3876,6 +3889,7 @@
 	},
 	{
 		"colorName": "Indigo",
+		"hexcode": "#4b0082",
 		"sections": [
 			{
 				"title": "Composition and Properties of Indigo",
@@ -4063,6 +4077,7 @@
 	},
 	{
 		"colorName": "Bone black",
+		"hexcode": "#162320",
 		"sections": [
 			{
 				"title": "Composition and Properties of Bone Black",
@@ -4194,6 +4209,7 @@
 	},
 	{
 		"colorName": "Ivory black",
+		"hexcode": "#15221C",
 		"sections": [
 			{
 				"title": "Composition and Properties of Ivory Black",
@@ -4292,6 +4308,7 @@
 	},
 	{
 		"colorName": "Cobalt violet",
+		"hexcode": "#F161F6",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cobalt Violet",
@@ -4366,6 +4383,8 @@
 	},
 	{
 		"colorName": "Naples yellow",
+		"hexcode": "#fada5e",
+
 		"sections": [
 			{
 				"title": "Composition and Properties of Naples Yellow",
@@ -4459,6 +4478,7 @@
 	},
 	{
 		"colorName": "Cadmium yellow",
+		"hexcode": "#fff600",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cadmium Yellow",
@@ -4578,6 +4598,7 @@
 	},
 	{
 		"colorName": "Prussian Blue",
+		"hexcode": "#003153",
 		"sections": [
 			{
 				"title": "Composition and Properties of Prussian Blue",
@@ -4677,6 +4698,7 @@
 	},
 	{
 		"colorName": "Verdigris",
+		"hexcode": "#43b3ae",
 		"sections": [
 			{
 				"title": "Composition and Properties of Verdigris",
@@ -4824,6 +4846,7 @@
 	},
 	{
 		"colorName": "Green earth",
+		"hexcode": "#63A75D",
 		"sections": [
 			{
 				"title": "Composition and Properties Green Earth",
@@ -4982,6 +5005,7 @@
 	},
 	{
 		"colorName": "Lead white",
+		"hexcode": "#FFFFFF",
 		"sections": [
 			{
 				"title": "Composition and Properties of Lead White",
@@ -5322,6 +5346,7 @@
 	},
 	{
 		"colorName": "Malachite",
+		"hexcode": "#0bda51",
 		"sections": [
 			{
 				"title": "Composition and Properties of Malachite",
@@ -5486,6 +5511,7 @@
 	},
 	{
 		"colorName": "Viridian",
+		"hexcode": "#40826d",
 		"sections": [
 			{
 				"title": "Composition and Properties of Viridian",
@@ -5629,6 +5655,7 @@
 	},
 	{
 		"colorName": "Smalt",
+		"hexcode": "#003399",
 		"sections": [
 			{
 				"title": "Composition and Properties of Smalt",
@@ -5769,6 +5796,7 @@
 	},
 	{
 		"colorName": "Red lead",
+		"hexcode": "#FE3C05",
 		"sections": [
 			{
 				"title": "Composition and Properties of Red Lead",
@@ -5837,6 +5865,7 @@
 	},
 	{
 		"colorName": "Red ochre",
+		"hexcode": "#D54217",
 		"sections": [
 			{
 				"title": "Composition and Properties of Red Ochre",
@@ -6047,6 +6076,7 @@
 	},
 	{
 		"colorName": "Yellow ochre",
+		"hexcode": "#E29104",
 		"sections": [
 			{
 				"title": "Composition and Properties of Yellow Ochre",
@@ -6315,6 +6345,7 @@
 	},
 	{
 		"colorName": "Emerald green",
+		"hexcode": "#50c878",
 		"sections": [
 			{
 				"title": "Composition and Properties of Emerald Green",
@@ -6476,6 +6507,8 @@
 	},
 	{
 		"colorName": "Azurite",
+		"hexcode": "#09349D",
+
 		"sections": [
 			{
 				"title": "Composition and Properties of Azurite",
@@ -6526,6 +6559,7 @@
 	},
 	{
 		"colorName": "Orpiment",
+		"hexcode": "#FFBE07",
 		"sections": [
 			{
 				"title": "Composition and Properties of Orpiment",
@@ -6640,6 +6674,7 @@
 	},
 	{
 		"colorName": "Cobalt blue",
+		"hexcode": "#0047ab",
 		"sections": [
 			{
 				"title": "Composition and Properties of Cobalt Blue",
@@ -6766,6 +6801,7 @@
 	},
 	{
 		"colorName": "Chrome yellow",
+		"hexcode": "#ffa700",
 		"sections": [
 			{
 				"title": "Composition and Properties of Chrome Yellow",
@@ -6899,6 +6935,7 @@
 	},
 	{
 		"colorName": "Vermilion",
+		"hexcode": "#e34234",
 		"sections": [
 			{
 				"title": "Composition and Properties of Vermilion",
@@ -7273,6 +7310,7 @@
 	},
 	{
 		"colorName": "Madder lake",
+		"hexcode": "#FD1707",
 		"sections": [
 			{
 				"title": "Composition and Properties of Madder Lake",
@@ -7429,6 +7467,7 @@
 	},
 	{
 		"colorName": "Lead-tin yellow",
+		"hexcode": "#4166f5",
 		"sections": [
 			{
 				"title": "Composition and Properties of Lead-Tin Yellow",
@@ -7647,6 +7686,7 @@
 	},
 	{
 		"colorName": "Ultramarine artificial",
+		"hexcode": "#4166f5",
 		"sections": [
 			{
 				"title": "Composition and Properties of Ultramarine Artificial",
@@ -7785,6 +7825,7 @@
 	},
 	{
 		"colorName": "Ultramarine natural",
+		"hexcode": "#4166f5",
 		"sections": [
 			{
 				"title": "Composition and Properties of Ultramarine natural",
