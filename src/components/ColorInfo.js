@@ -9,8 +9,12 @@ function ColorInfo({ colors }) {
   // console.log(color.sections.map(c => c.title))
 
   return (
-    <Box alignSelf="center" margin="medium" background={color.hexcode}>
-      {/* {color.map((colorInd) => ( */}
+    <Box
+      a11yTitle="Color Info Page"
+      alignSelf="center"
+      margin="medium"
+      background={color.hexcode}
+    >
       <Grid
         margin="medium"
         alignSelf="center"
@@ -30,7 +34,9 @@ function ColorInfo({ colors }) {
       >
         {/* map sections with title and texts */}
         <Box pad="small" gridArea="heading" size="large" align="center">
-          <Heading className="heading" pad="medium">{color.colorName}</Heading>
+          <Heading className="heading" pad="medium">
+            {color.colorName}
+          </Heading>
         </Box>
 
         <Box
@@ -38,13 +44,20 @@ function ColorInfo({ colors }) {
           gridArea="description"
           background="light-2"
           align="center"
+          a11yTitle={color.sections[0].title}
         >
           <h2>{color.sections[0].title}</h2>
           <p>{color.sections[0].texts}</p>
           <p>{color.sections[0].links}</p>
         </Box>
 
-        <Box pad="small" gridArea="names" background="light-2" align="center">
+        <Box
+          pad="small"
+          gridArea="names"
+          background="light-2"
+          align="center"
+          a11yTitle={color.sections[1].title}
+        >
           <h2>{color.sections[1].title}</h2>
           <p>{color.sections[1].texts}</p>
           <p>{color.sections[1].links}</p>
@@ -55,6 +68,7 @@ function ColorInfo({ colors }) {
           gridArea="preparation"
           background="light-2"
           align="center"
+          a11yTitle={color.sections[2].title}
         >
           <h2>{color.sections[2].title}</h2>
           <p>{color.sections[2].texts}</p>
@@ -65,6 +79,7 @@ function ColorInfo({ colors }) {
           <h2>{color.sections[3].title}</h2>
           <p>{color.sections[3].texts}</p>
           <p>{color.sections[3].links}</p>
+          a11yTitle={color.sections[3].title}
         </Box>
 
         {/* // && if this AND this is true */}
@@ -74,6 +89,7 @@ function ColorInfo({ colors }) {
             gridArea="quotes"
             background="light-2"
             align="center"
+            a11yTitle="Quote Section"
           >
             <h2>Quote</h2>
             {color.quotes.map((quote) => {
@@ -88,12 +104,29 @@ function ColorInfo({ colors }) {
         )}
 
         {/* {!!color.sections.filter(section => section.picUrls.length).length &&  */}
-        <Box pad="small" gridArea="images" background="light-2" align="center">
-          <Box height="small" width="medium" overflow="hidden">
-            <Carousel fill>
+        <Box
+          a11yTitle="Pictures of Color"
+          pad="small"
+          gridArea="images"
+          background="light-2"
+          align="center"
+        >
+          <Box
+            a11yTitle="Pictures of Color"
+            height="small"
+            width="medium"
+            overflow="hidden"
+          >
+            <Carousel a11yTitle="Picture Carousel" fill>
               {color.sections.map((section) => {
                 return section.picUrls.map((image) => {
-                  return <Image fit="cover" src={image} />;
+                  return (
+                    <Image
+                      a11yTitle="Various pictures of color pigment, preparation, chemical composition, use in classical and modern paintings, timeline of color use, and basic swatches of color."
+                      fit="cover"
+                      src={image}
+                    />
+                  );
                 });
               })}
             </Carousel>
