@@ -85,13 +85,13 @@ function ColorInfo({ colors }) {
           pad="small"
           margin="small"
           elevation="small"
-          gridArea="history" 
-          background="light-2" 
-          align="center">
+          gridArea="history"
+          background="light-2"
+          align="center"
+          a11yTitle={color.sections[3].title}>
           <h2>{color.sections[3].title}</h2>
           <p>{color.sections[3].texts}</p>
           <p>{color.sections[3].links}</p>
-          a11yTitle={color.sections[3].title}
         </Box>
 
         {/* // && if this AND this is true */}
