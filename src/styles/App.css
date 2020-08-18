@@ -17,14 +17,11 @@
     background-size: cover;
   }
 
-  .mainSwatches {
-
-   background-size: cover;
-  }
 
   .italic {
     font-style: italic;
   } 
+  
 .heading {
   text-transform: capitalize;
 }

@@ -104,6 +104,7 @@ function ColorInfo({ colors }) {
         )}
 
         {/* {!!color.sections.filter(section => section.picUrls.length).length &&  */}
+
         <Box
           a11yTitle="Pictures of Color"
           pad="small"
@@ -113,11 +114,12 @@ function ColorInfo({ colors }) {
         >
           <Box
             a11yTitle="Pictures of Color"
-            height="small"
-            width="medium"
+            height="fit"
+            width="fit"
             overflow="hidden"
           >
-            <Carousel a11yTitle="Picture Carousel" fill>
+            <Carousel a11yTitle="Picture Carousel" fill play="3000">
+
               {color.sections.map((section) => {
                 return section.picUrls.map((image) => {
                   return (
