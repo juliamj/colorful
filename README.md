@@ -14,6 +14,7 @@ This app was an experiment in building and implementing a web scraper to find th
 - [Puppeteer](https://www.npmjs.com/package/puppeteer)
 - [Grommet](https://v2.grommet.io/)
 - [FontAwesome](https://fontawesome.com/)
+- [Scraper](https://github.com/jbello88/scraper) built by Markus Seeli
 
 ## Contributors 
 
@@ -23,3 +24,4 @@ This app was an experiment in building and implementing a web scraper to find th
 
 ## Resources
 - [ColourLex](http://www.colourlex.com)
+- [Color Hexa](https://www.colorhexa.com/)
