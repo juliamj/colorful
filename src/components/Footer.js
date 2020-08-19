@@ -18,6 +18,12 @@ function Media() {
                     icon={<Github color="white" />}
                     target="_blank"
                 />
+                <Anchor
+                    a11yTitle="Check out our Respository on Github"
+                    href="https://github.com/jbello88/scraper"
+                    icon={<Github color="white" />}
+                    target="_blank"
+                />
             </Box>
         </div>
     );
