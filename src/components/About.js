@@ -25,25 +25,28 @@ function About() {
 
         <Heading level="3">Tech and Tools</Heading>
         <Box pad="small">
-          <Anchor href="https://reactjs.org/">React</Anchor>
-          <Anchor href="https://v2.grommet.io/">Grommet</Anchor>
-          <Anchor href="https://www.npmjs.com/package/puppeteer">Puppeteer</Anchor>
+          <Anchor href="https://reactjs.org/" target="_blank">React</Anchor>
+          <Anchor href="https://v2.grommet.io/" target="_blank">Grommet</Anchor>
+          <Anchor href="https://www.npmjs.com/package/puppeteer" target="_blank">Puppeteer</Anchor>
         </Box>
 
         <Heading level="3">Contributors</Heading>
         <Box pad="small">
           <Image />
-          <Anchor href="http://www.github.com/juliamj">Julia Jannsen</Anchor>
+          <Anchor href="http://www.github.com/juliamj" target="_blank">Julia Jannsen</Anchor>
           <Image />
-          <Anchor href="http://www.github.com/jbello88">Markus Seeli</Anchor>
+          <Anchor href="http://www.github.com/jbello88" target="_blank">Markus Seeli</Anchor>
           <Image />
-          <Anchor href="http://www.github.com/holdenmad">Holden Madagame</Anchor>
+          <Anchor href="http://www.github.com/holdenmad" target="_blank">Holden Madagame</Anchor>
         </Box>
 
         <Heading level="3">Links</Heading>
         <Box pad="small">
-          <Anchor href="http://www.colourlex.com">ColourLex</Anchor>
-          <Anchor href="http://www.github.com/holdenmad/colors">
+          <Anchor href="http://www.colourlex.com" target="_blank">ColourLex</Anchor>
+          <Anchor href="http://www.github.com/holdenmad/colors" target="_blank">
+            Colorful Github Repo
+          </Anchor>         
+           <Anchor href="https://github.com/jbello88/scraper" target="_blank">
             Colorful Github Repo
           </Anchor>
         </Box>
