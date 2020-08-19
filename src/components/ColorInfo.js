@@ -6,7 +6,6 @@ function ColorInfo({ colors }) {
   let { id } = useParams();
   let colorId = Number(id);
   let color = colors[colorId];
-  // console.log(color.sections.map(c => c.title))
 
   return (
     <Box
@@ -117,8 +116,6 @@ function ColorInfo({ colors }) {
           </Box>
         )}
 
-        {/* {!!color.sections.filter(section => section.picUrls.length).length &&  */}
-
         <Box
           a11yTitle="Pictures of Color"
           pad="small"
@@ -148,7 +145,6 @@ function ColorInfo({ colors }) {
             </Carousel>
           </Box>
         </Box>
-        {/* } */}
       </Grid>
     </Box>
   );
