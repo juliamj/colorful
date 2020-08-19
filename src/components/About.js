@@ -24,16 +24,16 @@ function About() {
         Colorful
       </Heading>
       <Box pad="medium" align="center" width="large">
-        <Heading level="3">Objective</Heading>
+        <Heading level="3" margin={{top:"medium"}}>Objective</Heading>
 
-        <Box pad="small">
-          <Paragraph>
+        <Box width="medium" pad="small">
+          <Paragraph color="brand" textAlign="center">
             A project to experiment with web scraping, and to create a color
             picker with cultural information about various colors throughout history. 
           </Paragraph>
         </Box>
 
-        <Heading level="3">Tech and Tools</Heading>
+        <Heading level="3" margin={{top:"medium"}}>Tech and Tools</Heading>
         <Box width="large" pad="small" align="center">
           <Anchor size="medium" href="https://reactjs.org/" target="_blank">
             React
@@ -53,101 +53,96 @@ function About() {
           </Anchor>
         </Box>
 
-        <Heading level="3">Contributors</Heading>
+        <Heading level="3" margin={{top:"medium"}}>Contributors</Heading>
+        <Box pad="small" align="start">
 
-        <Box pad="small">
-          <Box direction="row" gap="xxsmall" justify="center">
+          <Box direction="row" gap="xxsmall" justify="center" margin={{bottom:"small"}}>
             <Box height="xsmall" width="xsmall">
               <Image
                 fit="cover"
-                src="/images/julia.jpg"
+                src="./profileimages/julia.jpg"
               />
             </Box>
             <Box pad="small">
-              <Text size="medium" color="brand">Julia Jannsen</Text>
+              <Text size="medium" color="brand" weight="bold">Julia Jannsen</Text>
               <Box direction="row" gap="xxsmall" justify="center">
                 <Anchor
                   a11yTitle="Check out my Github"
                   href="http://www.github.com/juliamj"
-                  icon={<Github color="brand" />}
-                  target="_blank"
-                  size="xsmall"
+                  icon={<Github color="brand" size="small"/>}
+                  target="_blank"          
                 />
                 <Anchor
                   a11yTitle="Check out my LinkedIn Profile"
                   href="https://www.linkedin.com/in/juliamj/"
-                  icon={<Linkedin color="brand" />}
+                  icon={<Linkedin color="brand" size="small"/>}
                   target="_blank"
-                  size="large"
                 />
               </Box>
             </Box>
           </Box>
 
-          <Box direction="row" gap="xxsmall" justify="center">
+          <Box direction="row" gap="xxsmall" justify="center" margin={{bottom:"small"}}>
             <Box height="xsmall" width="xsmall">
               <Image
                 fit="cover"
-                src="/images/markus.jpg"
+                src="./profileimages/.jpg"
               />
             </Box>
             <Box pad="small">
-              <Text size="medium" color="brand">Markus Seeli</Text>
+              <Text size="medium" color="brand" weight="bold">Markus Seeli</Text>
               <Box direction="row" gap="xxsmall" justify="center">
                 <Anchor
                   a11yTitle="Check out my Github"
                   href="http://www.github.com/jbello88"
-                  icon={<Github color="brand" />}
-                  target="_blank"
-                  size="xsmall"
+                  icon={<Github color="brand" size="small"/>}
+                  target="_blank"          
                 />
                 <Anchor
                   a11yTitle="Check out my LinkedIn Profile"
                   href=""
-                  icon={<Linkedin color="brand" />}
+                  icon={<Linkedin color="brand" size="small"/>}
                   target="_blank"
-                  size="large"
                 />
               </Box>
             </Box>
           </Box>
 
-          <Box direction="row" gap="xxsmall" justify="center">
+          <Box direction="row" gap="xxsmall" justify="center" margin={{bottom:"small"}}>
             <Box height="xsmall" width="xsmall">
               <Image
                 fit="cover"
-                src="/images/holden.jpg"
+                src="./profileimages/holden.jpg"
               />
             </Box>
             <Box pad="small">
-              <Text size="medium" color="brand">Holden Madagame</Text>
+              <Text size="medium" color="brand" weight="bold">Holden Madagame</Text>
               <Box direction="row" gap="xxsmall" justify="center">
                 <Anchor
                   a11yTitle="Check out my Github"
                   href="http://www.github.com/holdenmad"
-                  icon={<Github color="brand" />}
-                  target="_blank"
-                  size="xsmall"
+                  icon={<Github color="brand" size="small"/>}
+                  target="_blank"          
                 />
                 <Anchor
                   a11yTitle="Check out my LinkedIn Profile"
                   href="https://www.linkedin.com/in/holdenmad/"
-                  icon={<Linkedin color="brand" />}
+                  icon={<Linkedin color="brand" size="small"/>}
                   target="_blank"
-                  size="large"
                 />
               </Box>
             </Box>
           </Box>
+
         </Box>
 
-        <Heading level="3">Links</Heading>
-        <Box pad="small">
-          <Anchor href="http://www.colourlex.com" target="_blank">ColourLex</Anchor>
-          <Anchor href="http://www.github.com/holdenmad/colors" target="_blank">
+        <Heading level="3" margin={{top:"medium"}}>Links</Heading>
+        <Box pad="small" align="center">
+          <Anchor size="medium" href="http://www.colourlex.com" target="_blank">ColourLex</Anchor>
+          <Anchor size="medium" href="http://www.github.com/holdenmad/colors" target="_blank">
             Colorful Github Repo (Frontend)
           </Anchor>
-          <Anchor href="https://github.com/jbello88/scraper" target="_blank">
+          <Anchor size="medium" href="https://github.com/jbello88/scraper" target="_blank">
             Colorful Github Repo (Backend)
           </Anchor>
         </Box>
