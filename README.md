@@ -1,6 +1,6 @@
 # Colorful App
 
-![Screenshot of Colorful App](/images/colorfulscreenshot.png)
+![Screenshot of Colorful App](https://i.ibb.co/RpSS2vJ/Screenshot-2020-08-19-at-11-11-54.png)
 
 ## About
 
